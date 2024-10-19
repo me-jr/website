@@ -1,0 +1,245 @@
+.Home {
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(22, 22, 22);
+  color: white;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+.website-header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 20px 50px;
+  background-color: rgb(22, 22, 22); 
+}
+
+.logo {
+  display: flex; 
+  align-items: center; 
+  font-size: 1rem; 
+  font-weight: 500;
+  color: white;
+}
+
+.logo-img {
+  width: 50px; 
+  height: auto;
+  margin-right: 10px;
+}
+
+.nav-links {
+  list-style: none; 
+  display: flex; /* Display items in a row */
+  gap: 30px; /* Space between navigation links */
+}
+
+.nav-links li {
+  display: inline-block; /* Make each list item inline */
+}
+
+.nav-links a {
+  text-decoration: none; /* Remove underline */
+  color: white; /* Darker text color for links */
+  font-size: 1rem; /* Adjust font size */
+  font-weight: 500;
+  transition: color 0.3s ease-in-out; /* Smooth color transition on hover */
+}
+
+/* Hover effect on navigation links */
+.nav-links a:hover {
+  color: #67b26f; /* Change link color on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stack logo and nav links vertically */
+    text-align: center; /* Center-align text */
+  }
+
+  .nav-links {
+    flex-direction: column; /* Stack nav items vertically on smaller screens */
+    gap: 15px; /* Reduce gap for smaller screens */
+  }
+
+  .logo {
+    margin-bottom: 20px; /* Add space between logo and nav links */
+  }
+}
+
+.auth-buttons button {
+  margin-left: 10px;
+}
+
+/* .motto-section {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #67b26f, #4ca2cd); 
+  color: #fff;
+} */
+
+.motto-section {
+  text-align: center;
+  padding: 60px 30px;
+  background: linear-gradient(135deg, #67b26f, #4ca2cd);
+  color: #fff;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Deep shadow to give a lifted effect */
+  transform: scale(1); /* Default scale */
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; /* Smooth transition */
+}
+
+.motto-h {
+  font-size: 3rem; 
+  font-weight: bold;
+  text-transform: uppercase; 
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); 
+  animation: fadeIn 3s ease-in-out; 
+}
+
+.motto-p {
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 3s ease-in-out;
+}
+
+/* Add a fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Starting slightly lower */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End at original position */
+  }
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #f4f4f4;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about {
+  padding: 50px;
+  text-align: center;
+}
+
+.about-cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  max-width: 300px;
+  padding: 20px;
+}
+
+.software-details {
+  padding: 50px;
+  text-align: center;
+}
+
+.process-flow {
+  display: flex;
+  justify-content: space-around;
+}
+
+.step {
+  padding: 20px;
+  background-color: #ddd;
+  margin: 10px;
+}
+
+.team-overview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-title {
+  background-color: #f5f5f5;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.team-bottom {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  height: 300px;
+}
+
+.team-image {
+  flex: 1;
+  padding-right: 10px;
+}
+
+.team-image img {
+  width: 100%;
+  height: 100%; /* image fills container */
+  object-fit: cover; /* Crops image if needed */
+  border-radius: 5px;
+}
+
+.team-info {
+  flex: 2;
+  text-align: left;
+  font-size: 1rem;
+  height: 100%; /* Set container to take full height */
+}
+
+.team-info p {
+  margin: 5px 0;
+}
+
+.team-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.team-link {
+  text-decoration: none; 
+  color: inherit;
+}
